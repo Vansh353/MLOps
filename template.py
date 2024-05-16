@@ -6,7 +6,7 @@ list_of_files=[
    ".github/workflows/.gitkeep",
     "src/__init__.py",
     "src/components/__init__.py",
-    "src/components/data_injstion.py",
+    "src/components/data_injestion.py",
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
     "src/components/model_evaluation.py",
