@@ -6,7 +6,7 @@ flask
 mlflow==2.2.2
 dvc
 xgboost
-
+apache-airflow
 #dev requirements
  -e .
 

@@ -1,0 +1,10 @@
+[2024-05-17 16:07:51,954] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.127:5000
+[2024-05-17 16:07:51,954] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-05-17 16:07:53,025] 224 werkzeug - INFO - 127.0.0.1 - - [17/May/2024 16:07:53] "GET / HTTP/1.1" 200 -
+[2024-05-17 16:07:53,106] 224 werkzeug - INFO - 127.0.0.1 - - [17/May/2024 16:07:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-05-17 16:08:00,174] 224 werkzeug - INFO - 127.0.0.1 - - [17/May/2024 16:08:00] "GET /predict HTTP/1.1" 200 -
+[2024-05-17 16:08:18,863] 224 werkzeug - INFO - 127.0.0.1 - - [17/May/2024 16:08:18] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -
+[2024-05-17 16:09:18,852] 224 werkzeug - INFO - 127.0.0.1 - - [17/May/2024 16:09:18] "[33mPOST /ajax-api/2.0/mlflow/runs/search HTTP/1.1[0m" 404 -

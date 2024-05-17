@@ -1,0 +1,15 @@
+artifact_uri: file:///home/seaflux/MLOps/mlruns/0/ab7db2f6a2d0427ca3595662a9dc8e3e/artifacts
+end_time: 1715938973553
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab7db2f6a2d0427ca3595662a9dc8e3e
+run_name: tasteful-wasp-889
+run_uuid: ab7db2f6a2d0427ca3595662a9dc8e3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715938970926
+status: 3
+tags: []
+user_id: seaflux
