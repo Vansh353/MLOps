@@ -1,0 +1,15 @@
+artifact_uri: file:///home/seaflux/MLOps/mlruns/0/670b5ff1db6e4bc4b1844d54a2727ade/artifacts
+end_time: 1715866101775
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 670b5ff1db6e4bc4b1844d54a2727ade
+run_name: charming-calf-93
+run_uuid: 670b5ff1db6e4bc4b1844d54a2727ade
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715866099129
+status: 3
+tags: []
+user_id: seaflux
