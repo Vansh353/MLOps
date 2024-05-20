@@ -1,24 +1,37 @@
-name: DiamondPricePrediction
+name: Python application
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+    paths-ignore:
+        - 'README.md'  
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+        - 'README.md'  
+
+
+permissions:
+  contents: read
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest] 
+        python-version: ["3.11"]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.11
-
-
-      - name: Build and deploy
-        run: |
-          docker-compose up
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Test with tox
+      run: tox
